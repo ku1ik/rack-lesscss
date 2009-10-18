@@ -2,9 +2,9 @@
 
 Gem::Specification.new do |s|
   s.name = %q{rack-lesscss}
-  s.version = "0.1"
+  s.version = "0.2"
   s.platform = Gem::Platform::RUBY
-  s.date = %q{2009-07-25}
+  s.date = %q{2009-10-18}
   s.authors = ["Marcin Kulik"]
   s.email = %q{marcin.kulik@gmail.com}
   s.has_rdoc = false
