@@ -2,13 +2,13 @@ require 'less'
 
 module Rack
   class LessCss
-    
+
     def initialize(app, opts)
       @app = app
       @less_path = opts[:less_path] or raise ArgumentError, "You must specify :less_path option (path to directory containing .less files)"
       css_route = opts[:css_route] || "/stylesheets"
       css_route = css_route[0..-2] if css_route[-1] == "/"
-      @css_route_regexp = /#{Regexp.escape(css_route)}\/([^\.]+)\.css/
+      @css_route_regexp = /#{Regexp.escape(css_route)}\/(.+)\.css/
     end
 
     def call(env)
@@ -25,7 +25,7 @@ module Rack
       end
       @app.call(env)
     end
-    
+
     private
     def get_source(stylesheet)
       ::File.read(::File.join(@less_path, stylesheet + ".less"))
