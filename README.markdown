@@ -9,7 +9,7 @@ Rack::LessCss, is a Rack middleware which converts .less files into .css files o
 Instalation
 -----------
 
-<pre><code>gem install rack-lesscss -s http://gemcutter.org</code></pre>
+<pre><code>gem install rack-lesscss</code></pre>
 
 Usage
 -----
@@ -28,7 +28,7 @@ Enable in Rails:
 
 <em>config/environment.rb</em>:
 
-<pre><code>config.gem "rack-lesscss", :source => "http://gemcutter.org"
+<pre><code>config.gem "rack-lesscss"
 config.middleware.use "Rack::LessCss", :less_path => File.join(RAILS_ROOT, "public", "less")
 </code></pre>
 
