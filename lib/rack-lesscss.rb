@@ -28,7 +28,7 @@ module Rack
 
     private
     def get_source(stylesheet)
-      ::File.read(::File.join(@less_path, stylesheet + ".less"))
+      ::File.new(::File.join(@less_path, stylesheet + ".less"))
     rescue
       nil
     end
