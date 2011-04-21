@@ -7,7 +7,6 @@ Gem::Specification.new do |s|
   s.date = %q{2010-06-04}
   s.authors = ["Marcin Kulik"]
   s.email = %q{marcin.kulik@gmail.com}
-  s.has_rdoc = false
   s.homepage = %q{http://sickill.net}
   s.summary = %q{Rack middleware for compiling lesscss files into css}
   s.files = [ "lib/rack-lesscss.rb", "spec/rack-lesscss-spec.rb" ]
