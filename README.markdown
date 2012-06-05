@@ -6,7 +6,7 @@ About
 
 Rack::LessCss, is a Rack middleware which converts .less files into .css files on the fly during request. It’s main purpose is to ease development stage when you change your .less files frequently. With rack-lesscss middleware enabled you don’t need to compile .less files by hand after every change. LessCSS compiler has an option to watch for changes in .less file and automatically recompiles it but you need to remember to run compiler in watch mode for every stylesheet every time you start development session. There are also at least two Rails plugins which nicely integrates LessCSS into the app but this middleware can be used with Rails as well as with other ruby web frameworks like Merb or Sinatra.
 
-Instalation
+Installation
 -----------
 
 <pre><code>gem install rack-lesscss</code></pre>
@@ -41,3 +41,8 @@ Contact & Information
 
 Marcin Kulik - http://sickill.net/
 
+
+License
+-------
+
+This software is released under MIT license (see LICENSE file).
