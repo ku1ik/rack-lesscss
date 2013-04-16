@@ -39,7 +39,7 @@ If you want this middleware to handle stylesheets under other request path you c
 Contact & Information
 ---------------------
 
-Marcin Kulik - http://sickill.net/
+Marcin Kulik - http://ku1ik.com/
 
 
 License
